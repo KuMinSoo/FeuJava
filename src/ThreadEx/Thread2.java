@@ -4,7 +4,6 @@ public class Thread2 {
 
 	public static void main(String[] args) {
 		long startTime=System.currentTimeMillis();
-		System.out.println("시작시간: "+startTime);
 		for(int i=0; i<300;i++) {
 			System.out.printf("%s",new String("-"));
 		}
