@@ -25,6 +25,7 @@ class ThreadEx9_1 extends Thread{
 			for(long x=0;x<25000000000L;x++);
 		}
 		System.out.println("카운트가 종료되었습니다...");
+		System.out.println();
 	}
 	
 	
