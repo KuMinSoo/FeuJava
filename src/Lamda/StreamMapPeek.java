@@ -6,7 +6,11 @@ import java.util.stream.Stream;
 public class StreamMapPeek {
 
 	public static void main(String[] args) {
-	File[] FileArr={
+	
+	//Map()사용해서 Stream<File>->Stream<String> 변환하기
+	//Map()여러번 사용가능하다... peek 반복문이며 중간연산자이다.
+	//peek는 반복문을 통해 잘 값이 나오는지 중간에 확인하는 방법이다.
+		File[] FileArr={
 		new File("Ex1.java"),
 		new File("Ex2.bak"),
 		new File("Ex3.java"),

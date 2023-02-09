@@ -6,7 +6,7 @@ public class Optional1 {
 
 	public static void main(String[] args) {
 		
-		
+		//Optional<T> 객체를 생성하는 다양한 방법
 		String str="abc";
 		Optional<String> optval=Optional.of(str);
 		System.out.println("optval: "+optval.get()); 
@@ -18,7 +18,7 @@ public class Optional1 {
 		
 		//null 대신 빈 Optional<T>객체를 사용하기
 		Optional<String> optval4=null;//널로 초기화 바람직하지 않음
-		Optional<String> optval5=Optional.<String>empty();
+		Optional<String> optval5=Optional.<String>empty(); 
 		System.out.println("optval5: "+optval5.get());
 		
 	}
