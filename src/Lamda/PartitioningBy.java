@@ -41,7 +41,7 @@ class Student2{
 
 
 
-public class CountingSummingint {
+public class PartitioningBy {
 
 	public static void main(String[] args) {
 		Student2[] stuArr= {
@@ -105,7 +105,6 @@ public class CountingSummingint {
 		List<Student2> failedFemaleStu=failedStuBySex.get(false).get(true);
 		
 		for(Student2 s:failedMaleStu) System.out.println(s);
-		
 		for(Student2 s:failedFemaleStu) System.out.println(s);
 		
 		
