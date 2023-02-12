@@ -1,8 +1,8 @@
 package IO;
 
-import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.SequenceInputStream;
 import java.util.Vector;
@@ -24,11 +24,11 @@ public class Ex3 {
 			}
 		//sequeueceInputStream로 하나로 만들기
 		SequenceInputStream si=new SequenceInputStream(list.elements());
-		BufferedInputStream bi=new BufferedInputStream(si);
+		FileOutputStream output=new FileOutputStream("test.txt");
 		
 		int data=0;
-		while((data=bi.read())!=-1) {
-			System.out.write((char)data);
+		while((data=si.read())!=-1) {
+			output.write((char)data);
 		}
 		
 		}catch(IOException e) {
