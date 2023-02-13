@@ -22,7 +22,6 @@ public class URLConnectionEx2 {
 			
 			input.close();
 			
-			
 		}catch(Exception e){
 			e.printStackTrace();
 		}
