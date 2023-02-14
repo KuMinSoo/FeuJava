@@ -47,6 +47,7 @@ public class TypeEx1 {
 		System.out.println("y="+y);
 		System.out.println("z="+z);
 		
+		
 	}
 
 }

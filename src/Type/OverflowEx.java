@@ -3,7 +3,7 @@ package Type;
 public class OverflowEx {
 
 	public static void main(String[] args) {
-		
+		//부호 있는 정수의 오버플로어
 		short sMin=-32768, sMax=32767;
 		char cMin=0, cMax=65535;
 		System.out.println("sMin ="+sMin);
