@@ -30,14 +30,14 @@ public class InnerClassEx5 {
 		//Outter.staticClass를 하나로 보면된다. 이 하나의 static 클래스의 인스턴스 객체를 생성하는 것이다.
 		//그래서 new Outter.StaticClasss()가 된다.
 		
-		System.out.println(new Outter().new StaticClasss());
+		
 		
 		//System.out.println(new Outter().new StaticClasss.vv);
 		//여기서는 오류가 발생된다.
 		//그 이유는 new Outter()객체를 생성하고 그 안에서 내부 static 클래스를 부르려면 오류가 발생한다.
 		//인스턴스 클래스 안에 static변수를 넣을 수 없는 것과 같은 원리이다.
 		
-		//System.out.println(Outer.new innerClass());//클래스명. 뒤에서는 변수 또는 매서드만 올 수 있다
+		//System.out.println(Outter.new innerClass());//클래스명. 뒤에서는 변수 또는 매서드만 올 수 있다
 	
 	}
 	
