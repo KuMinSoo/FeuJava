@@ -20,6 +20,7 @@ public class JoinStringJoin {
 		}
 		System.out.println(af.toString());
 		System.out.println(af);
+
 		String as="asdf";
 		StringJoiner sj=new StringJoiner(",","[[","]]");//(구분자, 접두사, 접미사)
 		//sj.add()를하면 해당 요소를 갯수에 맞게 구분하여 "," 붙이고 접미사 접두사는 양쪽 끝으로 배열이 완성된다. 

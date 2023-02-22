@@ -5,12 +5,12 @@ public class Hashcode {
 	public static void main(String[] args) {
 		String str1=new String("abc");
 		String str2=new String("abc");
-		
+		//우리가 객체 주소값 아닌 hashcode를 쓰는 이유는 다량의 데이터를 저장하고 검색하는데 유용하기 때문이다.
+		//hashcode는 일정한 범위내에서 생성함으로 검색시 더 빨린 검색가능하다 이를 이용한 변수는 HahsMap,HashSet있다.
 		//객체에 저장된 주소값이 있다
 		//hashcode는 객체에 저장된 주소값을 바탕으로 또 다른 해시코드을 만듬!!
 		//그러나 String은 값이 같으면 똑같은 동일한 Hashcode 반환하나 주소값은 다름.
-		//우리가 객체 주소값 아닌 hashcode를 쓰는 이유는 다량의 데이터를 저장하고 검색하는데 유용하기 때문이다.
-		//hashcode는 일정한 범위내에서 생성함으로 검색시 더 빨린 검색가능하다 이를 이용한 변수는 HahsMap,HashSet있다.
+
 		
 		System.out.println(str1==str2);//주소값이 다름!!!
 		System.out.println(str1.equals(str2));//String의 경우는 객체가 달라도 똑같은 hashcode를 반환한다.

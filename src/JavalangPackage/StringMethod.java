@@ -13,7 +13,7 @@ public class StringMethod {
 		System.out.println(s);//char 배열을 하나의 문자열로 만듬
 		
 		//String(StringBuffer buf)
-		StringBuffer sb=new StringBuffer("hello");
+		StringBufferEx sb=new StringBufferEx("hello");
 		String ss=new String(sb);//StringBuffer를 새로운 문자열객체로 만듬
 		System.out.println(ss);
 		
@@ -137,7 +137,9 @@ public class StringMethod {
 		java.util.Date dd=new java.util.Date();
 		String aqs=String.valueOf(dd);
 		System.out.println(aqs);
-	
+		//String valueOf(byte, Integer, char 등등 여러가지 기본형도 있지만 Object 매개변수도 있다)
+		
+		
 	
 	}	
 }

@@ -23,7 +23,12 @@ public class StringBufferEx2 {
 		System.out.println(d.toString());
 		//그래서 StringBuffer 문자열을 비교할때 equals 메소드를 오버라이딩 하거나 오버라이딩이 귀찮으면..
 		//문자열로 뽑아서 비교하면 된다
-		System.out.println(d.toString().equals(e.toString()));
+		System.out.println(d.toString().equals(e.toString()));//true
+		//주소값이 아닌 문자열 과 문자열 비교할 수 있도록  toString해준다.. StringBuffer에서는
+		//왜냐하면 StringBuffer에서는 equals가 오버라이딩 되어 있지 않고 주소값을 비교하는 형태이기때문이다.
+		//그래서 StringBuffer에서는 equals메소드가 주소값을 비교하기 때문에 문자열로 변경하여 toString메서드를 이용해서 문자열값 비교를한다.
+		//그러나 String은 equals메서드가 문자열을 비교할 수 있도록 오버라이딩 되어있기때문에 toString메서드를 사용하지 않고 해당 String 객체를 비교할 수 있다.
+		System.out.println(d==e);//주소값비교 false
 	}
 
 }
