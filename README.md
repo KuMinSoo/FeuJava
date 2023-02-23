@@ -1,5 +1,7 @@
 # Java의 정석 기초편 스터디(정독 완료)
+
 <img src="https://user-images.githubusercontent.com/116619009/220857602-4fe6bbcd-157f-4140-83a7-bf441371a45b.png" width="150">
+
 1. 자바를 시작하기 저넹
 2. 변수
 3. 연산자
