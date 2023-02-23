@@ -13,7 +13,7 @@ public class StringMethod {
 		System.out.println(s);//char 배열을 하나의 문자열로 만듬
 		
 		//String(StringBuffer buf)
-		StringBufferEx sb=new StringBufferEx("hello");
+		StringBuffer sb=new StringBuffer("hello");
 		String ss=new String(sb);//StringBuffer를 새로운 문자열객체로 만듬
 		System.out.println(ss);
 		
